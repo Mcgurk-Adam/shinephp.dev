@@ -6,5 +6,6 @@
 *.sublime-workspace
 *.log
 *.js
+/node_modules/
 !sw.js
 !.gitignore
