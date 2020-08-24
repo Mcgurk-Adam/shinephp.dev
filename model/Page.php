@@ -14,7 +14,9 @@ final class Page {
 
 	function display($extra_html = array()) {
 
+		include_once 'view/includes/header.php';
 		include_once $this->view_file_path;
+		include_once 'view/includes/footer.php';
 
 	}
 

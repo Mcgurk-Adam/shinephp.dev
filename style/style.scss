@@ -1,34 +1,4 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	scroll-behavior: smooth;
-	border: none;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	font-family: 'Ubuntu', sans-serif;
-
-	&:focus {
-		outline: none;
-	}
-	
-}
-
-html, body {
-	height: 100%;
-	overflow-x: hidden;
-}
-
-a {
-	text-decoration: none;
-}
-
-main {
-
-	height: 100%;
-	width: calc(100% - 250px);
-	float: right;
-
-}
-
-.mobile-header {display: none;}
-#bottomTabBar {display: none;}
+@import "partials/reset";
+@import "partials/header";
+@import "partials/home";
+@import "partials/buttons";

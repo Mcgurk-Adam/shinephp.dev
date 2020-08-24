@@ -1,0 +1,25 @@
+#mainHeader {
+	height: 70px;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a img {
+		height: 50px;
+		width: auto;
+	}
+
+	nav a {
+
+		font-size: 16px;
+
+		&:not(:last-child) {
+
+			margin-right: 10px;
+		
+		}
+
+	}
+
+}
