@@ -1,9 +1,9 @@
 <?php
 
-final class Page {
+class Page {
 
-	private $page_title;
-	private $view_file_path;
+	$page_title;
+	$view_file_path;
 
 	function __construct($page_title, $view_path) {
 
