@@ -2,6 +2,8 @@
 declare(strict_types=1);
 session_start();
 
+require_once 'model/Page.php';
+
 if (preg_match('/\.(?:png|jpg|jpeg|gif|webmanifest|mp4|mp3|css|js|webp|svg|map|ttf)$/', $_SERVER["REQUEST_URI"])) {
 	return false;
 }
