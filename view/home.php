@@ -18,7 +18,7 @@
 		<ul>
 			<li>Uses only PDO for connecting to the database…no mysqli anywhere</li>
 			<li>We only implement cURL securely (no certificate disabling!)</li>
-			<li>The data validation scripts are built with a “whitelist” mindset, instead of a “blacklist”</li>
+			<li>The data validation scripts are built with an "allowlist" mindset, instead of a "denylist", thereby making applications even more secure.</li>
 		</ul>
 
 		<a href="/documentation/" title="Read the docs" class="button blue long">Read the docs</a>
