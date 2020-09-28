@@ -2,9 +2,6 @@
 
 class Page {
 
-	$page_title;
-	$view_file_path;
-
 	function __construct($page_title, $view_path) {
 
 		$this->page_title = $page_title;
