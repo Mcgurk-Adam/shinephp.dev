@@ -3,7 +3,7 @@
 	<section class="landing">
 		
 		<h1 class="big">Shine PHP</h1>
-		<p>A simple, lightweight, secure-by-default PHP library</p>
+		<p>Finally...a PHP microframework that stays out of your way!</p>
 		<div class="flex">
 			<a href="/tutorials/" title="Get started with Shine PHP now!" class="button blue">Get Started</a>
 			<a href="/documentation/" title="Read the docs" class="button green">Read the docs</a>

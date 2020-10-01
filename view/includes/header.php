@@ -25,8 +25,8 @@
 	</a>
 
 	<nav>
-		<a href="/tutorials/" title="Go to tutorials">Tutorials</a>	
-		<a href="/documentation/" title="Go to tutorials">Docmentation</a>	
+		<a href="/tutorials/" title="Go to tutorials"<?=(($_SERVER['REQUEST_URI'] === '/tutorials/' || $_SERVER['REQUEST_URI'] === '/tutorials') ? ' class="active"' : '')?>>Tutorials</a>	
+		<a href="/documentation/" title="Go to tutorials"<?=(($_SERVER['REQUEST_URI'] === '/documentation/' || $_SERVER['REQUEST_URI'] === '/documentation') ? ' class="active"' : '')?>>Docmentation</a>	
 	</nav>
 
 </header>
