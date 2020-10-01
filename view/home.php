@@ -36,7 +36,7 @@
 			<li>Almost <i>all</i> of the methods can be used in two lines of code!</li>
 		</ul>
 
-		<a href="/tutorials/" title="Read the tutorials" class="button green long">Read the docs</a>
+		<a href="/tutorials/" title="See the tutorials" class="button green long">See a tutorial</a>
 
 	</section>
 
