@@ -19,6 +19,28 @@
 </head>
 
 <header id="mainHeader">
+
+	<?php if (!empty($extra_html['side_nav_links'])): ?>
+
+		<aside>
+			
+			<div class="header">
+				<h1><?=$extra_html['side_title']?></h1>
+			</div>
+
+			<?php foreach ($extra_html['side_nav_links'] as $link): ?>
+
+				<details>
+					
+					<summary><?=$link['title']?></summary>
+
+				</details>
+
+			<?php endforeach; ?>
+
+		</aside>
+
+	<?php endif; ?>
 	
 	<a href="/" title="Go back home">
 		<img src="/assets/logo-mark.svg" alt="The Shine PHP logo with those words with yellow and blue colors" title="Shine PHP">
@@ -30,25 +52,3 @@
 	</nav>
 
 </header>
-
-<?php if (!empty($extra_html['side_nav_links'])): ?>
-
-	<aside>
-		
-		<header>
-			<h1><?=$extra_html['side_title']?></h1>
-		</header>
-
-		<?php foreach ($extra_html['side_nav_links'] as $link): ?>
-
-			<details>
-				
-				<summary><?=$link['title']?></summary>
-
-			</details>
-
-		<?php endforeach; ?>
-
-	</aside>
-
-<?php endif; ?>
