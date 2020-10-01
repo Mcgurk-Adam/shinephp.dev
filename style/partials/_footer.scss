@@ -1,0 +1,17 @@
+#bottomFooter {
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	span, a {
+		font-size: 16px;
+		color: #323F4B;
+	}
+
+	a {
+		text-decoration: underline;
+		margin: 0 5px;
+	}
+
+}
