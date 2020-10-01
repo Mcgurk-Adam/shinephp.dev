@@ -30,3 +30,25 @@
 	</nav>
 
 </header>
+
+<?php if (!empty($extra_html['side_nav_links'])): ?>
+
+	<aside>
+		
+		<header>
+			<h1><?=$extra_html['side_title']?></h1>
+		</header>
+
+		<?php foreach ($extra_html['side_nav_links'] as $link): ?>
+
+			<details>
+				
+				<summary><?=$link['title']?></summary>
+
+			</details>
+
+		<?php endforeach; ?>
+
+	</aside>
+
+<?php endif; ?>

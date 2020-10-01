@@ -1,0 +1,61 @@
+aside {
+
+	width: 250px;
+	background-color: #E4E7EB;
+	border-top: 1px solid #CBD2D9;
+	border-right: 1px solid #CBD2D9;
+	top: var(--top);
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+	header {
+
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid #CBD2D9;
+		height: 50px;
+		margin-bottom: 20px;
+
+		h1 {
+			font-weight: 400;
+			color: #323F4B;
+			font-size: 20px;
+		}
+
+	}
+
+	details {
+
+		margin-bottom: 20px;
+		width: 95%;
+		background-image: url(/assets/chevron-down.svg);
+		background-repeat: no-repeat;
+		background-position-x: calc(100% - 10px);
+		background-size: 35px;
+		background-position-y: -10px;
+
+		&[open] {
+			background-image: url(/assets/chevron-up.svg);
+			background-position-y: -7px;
+		}
+
+		summary {
+
+			cursor: pointer;
+			min-height: 25px;
+
+			&::-webkit-details-marker {
+				display: none;
+			}
+
+		}
+
+	}
+
+}

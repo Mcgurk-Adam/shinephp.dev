@@ -1,3 +1,7 @@
+:root {
+	--top: 70px;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -25,6 +29,10 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Exo", sans-serif;
+}
+
+main {
+	margin-top: var(--top);
 }
 
 .flex {

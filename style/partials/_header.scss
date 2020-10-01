@@ -1,9 +1,13 @@
 #mainHeader {
-	height: 70px;
+	height: var(--top);
 	padding: 0 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
 
 	a img {
 		height: 50px;
