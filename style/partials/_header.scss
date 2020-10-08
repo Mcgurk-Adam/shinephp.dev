@@ -13,7 +13,22 @@
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
 
 	input[type=checkbox] {
+
 		display: none;
+		appearance: none;
+		-webkit-appearance: none;
+		height: 70px;
+		width: 70px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url(/assets/hamburger.svg);
+		transition: 100ms all;
+
+		&:active {
+			opacity: .5;
+			transform: scale(.95);
+		}
+
 	}
 
 	a img {
@@ -35,6 +50,19 @@
 
 			margin-right: 10px;
 		
+		}
+
+	}
+
+}
+
+@media all and (max-width: 767px) {
+
+	#mainHeader {
+
+		input[type=checkbox] {
+			background-position-x: left;
+			display: inline-block;
 		}
 
 	}

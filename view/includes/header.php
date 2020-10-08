@@ -20,6 +20,8 @@
 
 <header id="mainHeader">
 
+	<input type="checkbox" id="mobileHamburgerMenu">
+
 	<?php if (!empty($extra_html['side_nav_links'])): ?>
 
 		<aside>

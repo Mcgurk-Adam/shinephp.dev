@@ -43,10 +43,19 @@ section.landing {
 .code {
 	max-width: 100%;
 	width: fit-content;
-	padding: 10px 50px;
+	padding: 10px 30px;
 	border: 1px solid #7B8794;
 	background-color: #1F2933;
 	border-radius: 4px;
 	color: #E4E7EB;
 	margin: 20px 0;
+}
+
+@media all and (max-width: 380px) {
+
+	.code {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
 }
