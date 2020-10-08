@@ -1,1 +1,1 @@
-<main></main>
+<main class="with-aside"></main>
