@@ -32,12 +32,12 @@
 
 			<?php foreach ($extra_html['side_nav_links'] as $link): ?>
 
-				<details>
+				<details<?=(isset($link['open']) && \boolval($link['open']) === true ? ' open' : '')?>>
 					
 					<summary><?=$link['title']?></summary>
 
 					<?php foreach ($link['links'] as $indi_link): ?>
-						<a class="dropdown-link" href="<?=$indi_link['href']?>" title="<?=$indi_link['title']?>"><?=$indi_link['title']?></a>
+						<a class="dropdown-link<?=(isset($indi_link['active']) && \boolval($indi_link['active']) ? ' active' : '')?>" href="<?=$indi_link['href']?>" title="<?=$indi_link['title']?>"><?=$indi_link['title']?></a>
 					<?php endforeach; ?>
 
 				</details>
