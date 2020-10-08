@@ -36,6 +36,10 @@
 					
 					<summary><?=$link['title']?></summary>
 
+					<?php foreach ($link['links'] as $indi_link): ?>
+						<a class="dropdown-link" href="<?=$indi_link['href']?>" title="<?=$indi_link['title']?>"><?=$indi_link['title']?></a>
+					<?php endforeach; ?>
+
 				</details>
 
 			<?php endforeach; ?>

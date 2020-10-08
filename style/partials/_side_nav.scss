@@ -58,6 +58,21 @@ aside {
 
 		}
 
+		.dropdown-link {
+			
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+			height: 30px;
+			text-indent: 20px;
+
+			// this will always target the first link because it's the first child after the <summary> tag
+			&:nth-child(2) {
+				margin-top: 10px;
+			}
+
+		}
+
 	}
 
 }

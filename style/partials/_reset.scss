@@ -34,14 +34,17 @@ h1, h2, h3, h4, h5, h6 {
 main {
 	margin-top: var(--top);
 	margin-bottom: 50px;
-
-	&.with-aside {
-		float: right;
-		width: calc(100% - 250px);
-	}
-
 }
 
 .flex {
 	display: flex;
+}
+
+@media all and (min-width: 768px) {
+
+	.with-aside {
+		float: right;
+		width: calc(100% - 250px);
+	}
+
 }
