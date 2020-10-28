@@ -48,13 +48,13 @@
 
 	<?php endif; ?>
 	
-	<a href="/" title="Go back home">
+	<a href="/" title="Go back home" class="logo-link">
 		<img src="/assets/logo-mark.svg" alt="The Shine PHP logo with those words with yellow and blue colors" title="Shine PHP">
 	</a>
 
 	<nav>
-		<a href="/tutorials/" title="Go to tutorials"<?=(($_SERVER['REQUEST_URI'] === '/tutorials/' || $_SERVER['REQUEST_URI'] === '/tutorials') ? ' class="active"' : '')?>>Tutorials</a>
-		<a href="/documentation/" title="Go to tutorials"<?=(($_SERVER['REQUEST_URI'] === '/documentation/' || $_SERVER['REQUEST_URI'] === '/documentation') ? ' class="active"' : '')?>>Docmentation</a>	
+		<a href="/tutorials/" title="Go to tutorials"<?=(\strpos($_SERVER['REQUEST_URI'], 'tutorials') !== false ? ' class="active"' : '')?>>Tutorials</a>
+		<a href="/documentation/" title="Go to tutorials"<?=(\strpos($_SERVER['REQUEST_URI'], 'documentation') !== false ? ' class="active"' : '')?>>Docmentation</a>	
 	</nav>
 
 </header>
